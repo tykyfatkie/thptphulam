@@ -11,9 +11,5 @@
       "src": "/(.*)",
       "dest": "/view/index.html"
     }
-  ],
-  "static": {
-    "src": "assets/**",
-    "dest": "/assets"
-  }
+  ]
 }
