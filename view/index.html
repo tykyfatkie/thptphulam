@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THPT PHÚ LÂM</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    
+
+    <!-- Hero Section -->
+    <div class="jumbotron text-center text-white mb-0 pt-0">
+        <div class="container bg-primary">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="logo col-12 col-lg-2 order-2 order-lg-1">
+                    <img src="../assets/img/logo-thpt-phulam.jpg" class="img-fluid" alt="Logo Trường THPT Phú Lâm">
+                </div>
+                <div class="banner col-12 col-lg-7 order-1 order-lg-2">
+                    <img src="../assets/img/text-banner.jpg" class="img-fluid w-95" alt="Trường THPT Phú Lâm">
+                </div>
+                <div class="col-lg-3 order-3 d-none d-lg-flex align-items-center">
+                    <img src="../assets/img/icon_hotline.jpg" class="img-fluid flex-lg-row" alt="Icon Hotline">
+                    <div class="flex-column text-start">
+                        <p class="mb-0">Hotline hỗ trợ</p>
+                        <h1 class="mb-0">0934982858</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg mt-0 pt-0"> <!-- Không có fixed-top -->
+        <div class="nav-bg container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto justify-content-center">
+                    <li class="nav-item"><a class="nav-link active p-3 text-white" href="../view/index.html">TRANG CHỦ</a></li>
+                    <li class="nav-item"><a class="nav-link p-3 text-white" href="#">GIỚI THIỆU</a></li>
+                    <li class="nav-item"><a class="nav-link p-3 text-white" href="#">CHUYÊN MÔN</a></li>
+                    <li class="nav-item"><a class="nav-link p-3 text-white" href="#">ĐOÀN THỂ</a></li>
+                    <li class="nav-item"><a class="nav-link p-3 text-white" href="#">HOẠT ĐỘNG</a></li>
+                    <li class="nav-item"><a class="nav-link p-3 text-white" href="#">TUYỂN DỤNG</a></li>
+                    <li class="nav-item"><a class="nav-link p-3 text-white" href="#">TIN TỨC</a></li>
+                    <li class="nav-item"><a class="nav-link p-3 text-white" href="#">LIÊN HỆ</a></li>
+                    <li class="thanh-chon">
+                        <button class="nut-thanh-chon nav-link active p-3 border border-0" onclick="chuyenDoiThanhChon()">TÀI KHOẢN</button>
+                        <div class="noi-dung-thanh-chon" id="thanhChonCuaToi">
+                            <a href="../view/profile.html" class="muc-thanh-chon">Hồ sơ cá nhân</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <!-- Banner -->
+    <div class="container pb-4">
+        <div class="row">
+           <div class="d-flex p-3 shadow-sm" style="background-color: #f9f9f9;">
+            <div class="col-12 col-md-8 order-2 order-md-1 div2 p-2">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-16x9">
+                                <img src="../assets/img/slide-show-1.jpg" class="img-fluid object-fit-cover w-100 h-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <img src="../assets/img/slide-show-2.jpg" class="img-fluid object-fit-cover w-100 h-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <img src="../assets/img/slide-show-3.jpg" class="img-fluid object-fit-cover w-100 h-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <!-- Nội dung div1 -->
+                <div class="container">
+                    <div class="card text-bg-dark border border-0">
+                        <img src="../assets/img/tuyen-sinh.jpg" style="height: 477px;" alt="...">
+                        <div class="card-img-overlay mt-5">
+                            <p class="card-text text-white fw-bold fs-3 text-center text-shadow">TRƯỜNG THPT PHÚ LÂM</p>
+                            <p class="card-text fw-semibold fw-bold fs-5 text-center text-shadow" style="color:#ffea00;">TUYỂN SINH CÁC LỚP</p>
+                            <p class="text-lop card-text text-white fw-bold fs-1 text-center text-shadow" style="letter-spacing: -5px;">10 - 11 - 12</p>
+                            <div class="constainer d-flex justify-content-center">
+                            <div class="container d-flex justify-content-center gap-2 pb-2">
+                                <svg class="star-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -1 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg class="star-fill" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 1 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg class="star-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -1 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                            </div>     
+                            </div>
+                            <div class="d-flex flex-row ps-5">
+                                <p class="p-2 text-white fw-bold text-shadow" style="font-size:18px;">THỜI GIAN TỪ:</p>
+                                <p class="p-2 text-warning fw-bold" style="font-size:18px ;text-shadow: 0px 0px 4px #000000;">30/05/2024</p>
+                              </div>
+                            <div class="container border border-2 border-white text-center p-2" style="box-shadow: 0px 0px 10px #0000007c;">
+                                <p class="text-white p-0 m-0 fw-bold text-shadow">NHẤP VÀO ĐĂNG KÝ TRỰC TUYẾN</p>
+                            </div>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="box-main pt-4 pb-5">
+        <section class="warp-thongbao pb-5">
+            <div class="container d-flex justify-content-center">
+                <h1 class="p-2">THÔNG BÁO MỚI NHẤT</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card-bg rounded-0 p-3" style="width: 26rem;">
+                            <img src="../assets/img/new-announcement-1.jpg" style="width: 400px; height: 300px;" class="img-fluid " alt="...">
+                            <div class="card-body">
+                              <p class="card-text h5 text-light">CHÚC MỪNG HỌC SINH ĐẠT GIẢI KỲ THI HỌC SINH GIỎI CẤP THÀNH PHỐ NĂM HỌC 2023-2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-bg rounded-0 p-3" style="width: 26rem;">
+                            <img src="../assets/img/new-announcement-2.jpg" style="width: 400px; height: 300px;" class="img-fluid " alt="...">
+                            <div class="card-body mb-4">
+                              <p class="card-text h5 text-light">THÔNG BÁO TUYỂN SINH NĂM HỌC 2024-2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-bg rounded-0 p-3" style="width: 26rem;">
+                            <img src="../assets/img/new-announcement-3.jpg" style="width: 400px; height: 300px;" class="img-fluid " alt="...">
+                            <div class="card-body mb-4">
+                              <p class="card-text h5 text-light">VÌ SAO TRƯỜNG THPT PHÚ LÂM LÀ LỰA CHỌN LÝ TƯỞNG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section class="warp-hoatdong">
+            <div class="container d-flex justify-content-center">
+                <h1>PHÚ LÂM MÔI TRƯỜNG HỌC TẬP TOÀN DIỆN</h1>
+            </div>
+            <div class="carousel-con">
+                <div class="carousel-tr">
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-1.jpg" class="rounded-circle" alt="Card 1">
+                        <h1 class="card-font">CƠ SỞ VẬT CHẤT</h1>
+                    </div>
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-2.jpg" class="rounded-circle" alt="Card 2">
+                        <h1 class="card-font">CLB NĂNG KHIẾU</h1>
+                    </div>
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-3.jpg" class="rounded-circle" alt="Card 3">
+                        <h1 class="card-font">TUYỂN SINH</h1>
+                    </div>
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-4.jpg" class="rounded-circle" alt="Card 4">
+                        <h1 class="card-font">HOẠT ĐỘNG NGOẠI KHÓA</h1>
+                    </div>
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-5.jpg" class="rounded-circle" alt="Card 5">
+                        <h1 class="card-font">HOẠT ĐỘNG LỚP HỌC</h1>
+                    </div>
+                    <!-- Nhân bản card để vòng lặp mượt -->
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-1.jpg" class="rounded-circle" alt="Card 1">
+                        <h1 class="card-font">CƠ SỞ VẬT CHẤT</h1>
+                    </div>
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-2.jpg" class="rounded-circle" alt="Card 2">
+                        <h1 class="card-font">CLB NĂNG KHIẾU</h1>
+                    </div>
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-3.jpg" class="rounded-circle" alt="Card 3">
+                        <h1 class="card-font">TUYỂN SINH</h1>
+                    </div>
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-4.jpg" class="rounded-circle" alt="Card 4">
+                        <h1 class="card-font">HOẠT ĐỘNG NGOẠI KHÓA</h1>
+                    </div>
+                    <div class="cardd">
+                        <img src="../assets/img/slide-show-hoat-dong-5.jpg" class="rounded-circle" alt="Card 5">
+                        <h1 class="card-font">HOẠT ĐỘNG LỚP HỌC</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="warp-sukien">
+            <div class="container warp-sukien-bg">
+                <div class="row">
+                    <div class="col-sm-7 border border-5">
+                        <div class="container">
+                            <h2 class="d-flex justify-content-start py-3">SỰ KIỆN NỔI BẬT</h2>
+                        </div>
+                        <div class="container my-4">
+                            <div class="row"> 
+                                <div class="col-6">
+                                    <div class="d-flex gap-2"> 
+                                        <img src="../assets/img/su-kien-noi-bat-1.jpg" class="img-fluid" style="width: 150px;" alt="..."> 
+                                        <div class="text-wrap fw-bold">
+                                            TRƯỜNG THPT PHÚ LÂM ĐẠT CHUẨN CHẤT LƯỢNG KIỂM DỊNH GIÁO DỤC
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex gap-2"> 
+                                        <img src="../assets/img/su-kien-noi-bat-2.jpg" class="img-fluid" style="width: 150px;" alt="..."> 
+                                        <div class="text-wrap fw-bold">
+                                            KẾ HOẠCH PHÁT TRIỂN NHÀ TRƯỜNG GIAI ĐOẠN 2021 - 2026
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container my-4">
+                            <div class="row"> 
+                                <div class="col-6">
+                                    <div class="d-flex gap-2"> 
+                                        <img src="../assets/img/su-kien-noi-bat-3.jpg" class="img-fluid" style="width: 150px;" alt="..."> 
+                                        <div class="text-wrap fw-bold">
+                                            TIẾT HỌC TOÁN HỌC BẰNG TIẾNG ANH TRƯỜNG THPT PHÚ LÂM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex gap-2"> 
+                                        <img src="../assets/img/su-kien-noi-bat-4.jpg" class="img-fluid" style="width: 150px;" alt="..."> 
+                                        <div class="text-wrap fw-bold">
+                                            CHÚC MỪNG HƠN 300 EM HỌC SINH KHỐI 12 THPT VƯỢT VŨ MÔN THÀNH CÔNG. TRƯỜNG THPT PHÚ LÂM ĐẠT 100% ĐẬU KÌ THI THPT QUỐC GIA
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                        <div class="container my-4">
+                            <div class="row"> 
+                                <div class="col-6">
+                                    <div class="d-flex gap-2"> 
+                                        <img src="../assets/img/su-kien-noi-bat-5.jpg" class="img-fluid" style="width: 150px;" alt="..."> 
+                                        <div class="text-wrap fw-bold">
+                                            THÔNG TIN CHÍNH THỨC TUYỂN SINH LỚP 10 MÔN NGỮ VĂN
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex gap-2"> 
+                                        <img src="../assets/img/su-kien-noi-bat-6.jpg" class="img-fluid" style="width: 150px;" alt="..."> 
+                                        <div class="text-wrap fw-bold">
+                                            TƯ VẤN TUYỂN SINH, CHỌN NGÀNH NGHỀ CHO TƯƠNG LAI
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 border border-start-0 border-5" style="background: #f2f3f6;">
+                        <div class="container">
+                            <h2 class="d-flex justify-content-start py-3">BAN NGÀNH LIÊN QUAN</h2>
+                        </div>
+                        <div class="container">
+                            <div class="row p-3 justify-content-center">
+                                <div class="col-4">
+                                    <img src="../assets/img/ban-nganh-lien-quan-1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <img src="../assets/img/ban-nganh-lien-quan-2.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <img src="../assets/img/ban-nganh-lien-quan-3.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="row p-3 justify-content-center">
+                                <div class="col-4">
+                                    <img src="../assets/img/ban-nganh-lien-quan-4.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <img src="../assets/img/ban-nganh-lien-quan-5.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <img src="../assets/img/ban-nganh-lien-quan-6.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <!-- <div class="d-flex grid gap-3">
+                                <div class="p-2 g-col-6 border">Grid item 1</div>
+                                <div class="p-2 g-col-6 border">Grid item 2</div>
+                                <div class="p-2 g-col-6 border">Grid item 3</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="container" style="background: #114688;">
+        <div class="row p-5 shadow-lg">
+            <div class="col-sm-7">
+                <!-- Row lồng chứa nội dung chính và div mới -->
+                <div class="row">
+                    <div class="col-12 container border border-5 border-end-0 bg-white">
+                        <div class="row">
+                            <div class="col-4 p-3">
+                                <img src="../assets/img/footer-logo.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="pt-">Thông tin liên hệ</h4>
+                                <hr>                       
+                                <ul class="list-unstyled">
+                                    <li class="d-flex">
+                                        <img src="../assets/svg/location-icon.svg" class="border border-dark p-2 mb-2" alt="">
+                                        <div class="px-2 pt-1">
+                                            721 Kinh Dương Vương - P. An Lạc - Q. Bình Tân - TP.HCM
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <img src="../assets/svg/telephone-fill.svg" class="border border-dark p-2 mb-2" alt="">
+                                        <div class="px-2 pt-1">
+                                            0934 98 28 58 (Cô Trâm)
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <img src="../assets/svg/telephone-fill.svg" class="border border-dark p-2 mb-2" alt="">
+                                        <div class="px-2 pt-1">
+                                            0907 135 079 (Thầy Ngoan)
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <img src="../assets/svg/globe2.svg" class="border border-dark p-2 mb-2" alt="">
+                                        <div class="px-2 pt-1">
+                                            www.thptphulam.com
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thẻ div mới dưới cột trái -->
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-7 mt-1 fw-semibold text-white">
+                        Copyright © THPT PHÚ LÂM. Design by TA
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex justify-content-end">
+                        <a href="https://www.tiktok.com/@truongphulam">
+                            <img src="../assets/svg/tiktok.svg" class="border rounded-circle p-2 mx-2" style="background: #f2f2f398;" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100067412362223">
+                            <img src="../assets/svg/facebook.svg" class="border rounded-circle p-2 mx-2" style="background: #f2f2f398;" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <iframe class="col-sm-5 container border border-5 bg-white p-2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31360.689780457065!2d106.608186!3d10.727833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dd259665667%3A0x3ae6f5512b18f9f!2zVHLGsOG7nW5nIFRIUFQgUGjDuiBMw6Jt!5e0!3m2!1svi!2sus!4v1741242530574!5m2!1svi!2sus" 
+                width="585" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </footer>
+
+
+</body>
+<script>
+    // Navbar cố định khi scroll
+    window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar-expand-lg');
+    if (window.scrollY > 165) { // 50px là điểm mà navbar sẽ bắt đầu cố định
+        navbar.classList.add('fixed-top');
+        document.body.style.paddingTop = navbar.offsetHeight + 'px';
+    } else {
+        navbar.classList.remove('fixed-top');
+        document.body.style.paddingTop = '0';
+    }
+    });
+
+
+    // Carousel tự chạy
+    const track = document.querySelector('.carousel-tr');
+    const cards = document.querySelectorAll('.cardd');
+    const cardWidth = track.querySelector('.cardd').offsetWidth + 18; // Chiều rộng card + gap
+    const totalCards = 5; // Số card gốc
+    let position = 0;
+    let intervalId; // Biến để lưu ID của setInterval
+    let isHovering = false; // Theo dõi trạng thái hover
+
+    function slide() {
+        if (!isHovering) { // Chỉ chạy nếu không hover
+            position -= cardWidth; // Dịch sang trái 1 card
+            track.style.transition = 'transform 0.5s ease'; // Hiệu ứng chuyển động
+            track.style.transform = `translateX(${position}px)`;
+
+            // Khi đến nhóm card nhân bản (sau card 5), reset về đầu
+            if (Math.abs(position) >= cardWidth * totalCards) {
+                setTimeout(() => {
+                    track.style.transition = 'none'; // Tắt hiệu ứng để reset
+                    position = 0; // Quay về vị trí ban đầu
+                    track.style.transform = `translateX(${position}px)`;
+                }, 500); // Đợi hiệu ứng hoàn tất (0.5s)
+            }
+        }
+    }
+    // Khởi động carousel
+    function startCarousel() {
+        intervalId = setInterval(slide, 2000); // Chạy mỗi 2 giây
+    }
+    // Dừng carousel
+    function stopCarousel() {
+        clearInterval(intervalId); // Xóa interval
+    }
+    // Bắt đầu carousel khi tải trang
+    startCarousel();
+    // Gắn sự kiện hover cho từng card
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            isHovering = true; // Đánh dấu đang hover
+            stopCarousel(); // Dừng carousel
+        });
+
+        card.addEventListener('mouseleave', () => {
+            isHovering = false; // Bỏ đánh dấu hover
+            startCarousel(); // Chạy tiếp carousel
+        });
+    });
+
+
+    // Dropdown
+    function chuyenDoiThanhChon() {
+        var thanhChon = document.getElementById("thanhChonCuaToi");
+        thanhChon.classList.toggle("hoat-dong"); // Chuyển đổi lớp hoat-dong để hiển thị/ẩn
+    }
+
+    // Đóng thanh chọn khi nhấp ra ngoài
+    document.addEventListener("click", function(suKien) {
+        var thanhChon = document.getElementById("thanhChonCuaToi");
+        var nut = document.querySelector(".nut-thanh-chon");
+        if (!nut.contains(suKien.target) && !thanhChon.contains(suKien.target)) {
+            thanhChon.classList.remove("hoat-dong");
+        }
+    });
+</script>
+
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+</html>

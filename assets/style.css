@@ -1,0 +1,142 @@
+
+/* Màu nav và card */
+.nav-bg ,.card-bg{
+    background-color: #114688;
+}
+
+
+.carousel-con {
+    width: 100%;
+    max-width: 1256px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-tr {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 15px);
+    gap: 19px;
+}
+
+.cardd {
+    height: 490px;
+    display: flex;
+    flex-direction: column; /* Sắp xếp img và h1 theo chiều dọc */
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.cardd img {
+    width: 350px;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #114688;
+    border-left: 10px solid #114688; /* Viền trái xanh, 10px */
+    border-top: 10px solid #114688; /* Viền trên xanh, 10px */
+    box-shadow: -8px -8px #fff; /* Chỉ giữ bóng trái và trên */
+    filter: drop-shadow(0 0 4px #838181); /* Bóng mờ xung quanh */
+}
+
+.card-font{
+    margin: 30px 0 0 0; /* Khoảng cách trên h1 */ 
+    font-size: 24px; /* Điều chỉnh kích thước chữ cho phù hợp */
+    text-align: center;    
+}
+
+.text-shadow{
+    text-shadow: 0px 0px 10px #0000039d; /* Tạo bóng cho chữ */
+}
+
+.warp-sukien-bg{
+    background: #f2f3f6;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Đảm bảo navbar nằm trên các phần tử khác */
+}
+
+
+/* Optional: Thêm background cho navbar nếu chưa có */
+.navbar-light {
+    background-color: #fff; /* Hoặc màu bạn muốn */
+}
+
+
+/* Màu vàng cho icon */
+.star-fill {
+    fill: #ffcc00; /* Màu vàng, bạn có thể thay đổi */
+}
+
+
+/* Đổ bóng cho hộp hồ sơ cá nhân */
+.custom-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.072);
+}
+
+
+.thanh-chon {
+    position: relative;
+    display: inline-block;
+}
+
+.nut-thanh-chon {
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent; /* Loại bỏ màu nền, trở thành trong suốt */
+    color: #ffffff;
+}
+
+
+
+.nut-thanh-chon:hover{
+    background-color: #ff6c00;
+}
+
+.noi-dung-thanh-chon {
+    position: absolute;
+    
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 14px 18px;
+    z-index: 1;
+    opacity: 0; /* Ẩn ban đầu */
+    transform: translateY(4px); /* Dịch lên trên một chút */
+    transition: opacity 0.5s ease, transform 0.3s ease; /* Hiệu ứng mượt */
+    pointer-events: none; /* Ngăn tương tác khi ẩn */
+}
+
+.noi-dung-thanh-chon.hoat-dong {
+    opacity: 1; /* Hiển thị hoàn toàn */
+    transform: translateY(4px); /* Trượt xuống vị trí ban đầu */
+    pointer-events: auto; /* Cho phép tương tác */
+}
+
+.muc-thanh-chon {
+    text-decoration: none; /* Loại bỏ gạch dưới cho các mục trong dropdown */
+    display: block; /* Đảm bảo mỗi mục là một khối */
+    color: #000000;
+}
+
+/* Hiệu ứng hover cho các mục */
+.noi-dung-thanh-chon:hover {
+    background-color: #e6e8eb;
+    color: #ffffff;
+}
+
+.nav-item:hover{
+    background-color: #ff6c00;  
+}
+
+
+
+
+
+
